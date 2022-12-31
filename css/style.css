@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Montserrat',sans-serif;
+    text-decoration:none;
+}
+
+
+header {
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(71, 36, 36, 0.7),rgba(29, 1, 1, 0.7)),url('../images/image-2.jpeg');
+    background-size:cover;
+    background-position:center right;
+    background-repeat: no-repeat;
+   
+}
+
+.banner-content{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    color:#fff;
+}
+
+
+.banner-content H1{
+    font-size:45px;
+    margin-bottom:15px;
+
+}
+
+
+.banner-content h2{
+    font-size:18px;
+    font-weight:normal;
+    margin-bottom:15px;
+}
+
+
+.banner-content .btn {
+    padding:13px 35px;
+    border-radius:50px;
+    background:#36a7f2;
+    outline:none;
+    color:#fff;
+    border:none;
+    font-weight: 700;
+}
+
+
+
+.banner-content a{
+    color:#fff;
+}
+
+
+
+/* Form STYLING */
+.form-container{
+    width:90%;
+    max-width:450px;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius:10px;
+    transform:translate(-50%, -50%);
+    padding:50px 60px 70px;
+}
+
+
+.title{
+    font-size:30px;
+    margin-bottom:60px;
+    color:#3c00a0;
+    text-align:center;
+    position:relative;
+}
+
+
+.title::after{
+    content:'';
+    width:30px;
+    height:4px;
+    background:#3c00a0;
+    display:block;
+    border-radius:3px;
+    position:absolute;
+    bottom:-12px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+
+.input-field{
+    background:#eaeaea;
+    margin:15px 0;
+    border-radius:3px;
+    display:flex;
+    align-items:center;
+    max-height:65px;
+    transition:max-height 0.5s;
+    overflow:hidden;
+}
+
+
+input{
+    width:100%;
+    background:transparent;
+    border:0;
+    outline:0;
+    padding:18px 15px;
+}
+
+.input-field i{
+    margin-left:15px;
+    color:#999;
+}
+
+
+form p{
+    text-align:left;
+    font-size:13px;
+}
+
+form p a{
+    text-decoration:none;
+    color:#3c00a0;
+}
+
+
+.btn-field{
+     width:100%;
+     display:flex;
+     justify-content:space-between;
+}
+
+
+.btn-field button{
+    flex:78%;
+    background: #3c00a0;
+    height:40px;
+    color:#fff;
+    margin:5px;
+    outline:none;
+    border:none;
+    outline:0;
+    border-radius:20px;
+    cursor:pointer;
+    transition:background 1s;
+}
+
+.input-group{
+    height:280px;
+}
+
+
+.btn-field button.disable{
+    background:#eaeaea;
+    color:#555;
+}
+
+
+
+/* RESPONSIVENESS  */
+
+@media(max-width:900px){
+
+     .banner-content{
+        width:100%;
+     }   
+
+
+
+
+
+}
